@@ -13,6 +13,42 @@ html, body {
     background-repeat: no-repeat;
 }
 
+header {
+    background-color: white;
+}
+
+menu {
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+menu li {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.445);
+}
+
+menu a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+menu li:hover {
+    background-color: #004aad;
+}
+
+menu a:hover {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
 section#sociais {
     text-align: right;
 }
