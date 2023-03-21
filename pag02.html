@@ -9,6 +9,7 @@
         * {
             margin: 0px;
             padding: 0px;
+            box-sizing: border-box;
         }
 
         html, body {
@@ -22,6 +23,8 @@
 
         main {
             position: relative;
+            width: 100vw;
+            height: 100vh;
         }
 
         section.titulo {
@@ -34,7 +37,8 @@
         
 
         section.projetos {
-            height: 500px;
+            height: 550px;
+            position: relative;
             
             
            
@@ -44,16 +48,8 @@
 
         section#projeto1 {
             background-color: black;
-            background-image: url(imagens/tela-pc-png.png);
-            background-repeat: no-repeat;
-            position: absolute;
-            top: 10%;
-            left: 0%;
-            width: 100vw;
-            background-position: center center;
             
-            
-            
+              
         }
 
         section#projeto2 {
@@ -62,17 +58,70 @@
             
         }
 
-        iframe#tela {
-            position: relative;
-            top: 42px;
-            left: 100px;
+        div#corpo {
+            position: absolute;
+            width: 505px;
+            left: 50%;
+            top: 50%;
 
-            width: 492px;
-            height: 320px;
-            background-attachment: fixed;
-
-
+            transform: translate(-50%, -50%);
         }
+
+        div#iframe {
+            display: block;
+            
+            height: 355px;
+            
+        }
+
+        
+
+        div#texto {
+            display: block;
+            padding: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: justify;
+            text-indent: 2em;
+            color: white;
+        }
+
+        h1 {
+            padding: 10px;
+        }
+
+        @media screen and (min-width:768px) and (max-width:992px) {
+            
+            div#corpo {
+                width: 80vw;
+            }
+
+            iframe {
+                width: 780px;
+            }
+        } 
+
+        @media screen and (min-width: 992px) {
+            div#corpo {
+                width: 90vw;
+            }
+
+            div#iframe {
+                float: left;
+                width: 40%;
+                height: 100%;
+            }
+
+            div#texto {
+                float: right;
+                width: 55%;
+
+            }
+        }
+
+        
+        
+
+
 
 
     </style>
@@ -83,8 +132,15 @@
             <img src="imagens/meus-projetos-png..png" alt="meusprojetos" height="100px">
         </section>
         <section class="projetos" id="projeto1">
-        
-            <iframe src="https://wellinsonnunes.github.io/projeto-curso-matematica/" id="tela" frameborder="1"></iframe>
+             <div id="corpo">
+                 <div id="iframe">
+                    <iframe src="https://wellinsonnunes.github.io/projeto-curso-matematica/" id="tela" height="350px" width="500px" frameborder="1"></iframe>
+                    </div>
+                    <div id="texto">
+                    <h1>Projeto - Curso de Matemática</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quasi atque cum! Iste ex ut modi, eveniet reprehenderit eius quis temporibus exercitationem veniam culpa commodi numquam dolorem totam fugit itaque?</p>
+                </div>
+             </div>
         </section >
         <section class="projetos" id="projeto2">
         
