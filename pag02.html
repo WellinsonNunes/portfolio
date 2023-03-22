@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus Projetos</title>
     <style>
-        * {
+        @media screen and  (max-width:986px) {
+            * {
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
@@ -18,7 +19,7 @@
 
         }
         body {
-            background-color: #004aad;
+            background-color: 
         }
 
         main {
@@ -37,29 +38,22 @@
         
 
         section.projetos {
-            height: 550px;
+            height: 710px;
             position: relative;
-            
-            
-           
-            
-            
+                
         }
 
         section#projeto1 {
-            background-color: black;
-            
-              
+            background-color: black;      
         }
 
         section#projeto2 {
-            height: 900px;
-            
-            
+            height: 500px;
+            background-color:blueviolet;    
         }
 
         div#corpo {
-            position: absolute;
+            position: relative;
             width: 505px;
             left: 50%;
             top: 50%;
@@ -67,10 +61,12 @@
             transform: translate(-50%, -50%);
         }
 
-        div#iframe {
+        div#imagem {
             display: block;
-            width: 500px;
-            height: 355px;
+            width: 504px;
+            height: 404px;
+            border: 2px solid yellow;
+            box-shadow: 0px 0px 5px rgba(255, 255, 0, 0.514);
             
         }
 
@@ -80,8 +76,7 @@
             display: block;
             padding: 10px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-align: justify;
-            text-indent: 2em;
+            text-align: center;
             color: white;
         }
 
@@ -89,34 +84,23 @@
             padding: 10px;
         }
 
-        @media screen and (min-width:768px) and (max-width:992px) {
-            
-            div#corpo {
-                width: 80vw;
-            }
+        
 
-            iframe {
-                width: 780px;
-            }
-        } 
-
-        @media screen and (min-width: 992px) {
-            div#corpo {
-                width: 90vw;
-            }
-
-            div#iframe {
-                float: left;
-                width: 40%;
-                height: 100%;
-            }
-
-            div#texto {
-                float: right;
-                width: 40%;
-
-            }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 2em;
         }
+
+        a {
+            color:#ffde59;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    }
 
         
         
@@ -133,12 +117,14 @@
         </section>
         <section class="projetos" id="projeto1">
              <div id="corpo">
-                 <div id="iframe">
-                    <iframe src="https://wellinsonnunes.github.io/projeto-curso-matematica/" id="tela" height="350px" width="500px" frameborder="1"></iframe>
+                 <div id="imagem">
+                    <img src="imagens/captura 4.png" height="400px" width="500px" alt="site">
                     </div>
                     <div id="texto">
                     <h1>Projeto - Curso de Matemática</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quasi atque cum! Iste ex ut modi, eveniet reprehenderit eius quis temporibus exercitationem veniam culpa commodi numquam dolorem totam fugit itaque?</p>
+                    <p>Projeto criado com as tecnologias HTML e CSS. O site entega conteúdo de aulas de matemática para pessoas que não gostam da disciplina, é um site que busca chamar a atenção do cliente pelo fato de mostrar uma metodologia diferenciada, onde o cliente aprende matemática como se estivesse em um jogo, que tem suas fases e o chefão de cada fase.</p>
+
+                    <p><a href="https://wellinsonnunes.github.io/projeto-curso-matematica/" target="_blank">Clique aqui</a> para visitar o site.</p>
                 </div>
              </div>
         </section >
