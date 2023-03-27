@@ -36,7 +36,7 @@
         
 
         section.projetos {
-            height: 710px;
+            height: 745px;
             position: relative;
                 
         }
@@ -50,9 +50,13 @@
             background-color:rgb(255, 255, 255);    
         }
 
+        section#voltar {
+            text-align: center;
+        }
+
         div#corpo {
             position: relative;
-            width: 505px;
+            width: 430px;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
@@ -61,11 +65,11 @@
 
         div#imagem {
             background-image: url(imagens/captura\ 4.png);
-            background-size: contain;
+            background-size: cover;
             background-repeat: no-repeat;
             display: block;
-            width: 498px;
-            height: 380px;
+            width: 420px;
+            height: 280px;
             border: 2px solid yellow;
             box-shadow: 0px 0px 5px rgba(255, 255, 0, 0.514);
             
@@ -76,8 +80,8 @@
             background-size: cover;
             background-repeat: no-repeat;
             display: block;
-            width: 498px;
-            height: 380px;
+            width: 420px;
+            height: 280px;
             border: 2px solid yellow;
             box-shadow: 0px 0px 5px rgba(255, 255, 0, 0.514);
             
@@ -120,6 +124,15 @@
         }
 
         a:hover {
+            text-decoration: underline;
+        }
+
+        a.link2 {
+            color:#ff0000;
+            text-decoration: none;
+        }
+
+        a.link2:hover {
             text-decoration: underline;
         }
 
@@ -168,6 +181,10 @@
         section#projeto2 {
             height: 500px;
             background-color:white;    
+        }
+
+        section#voltar {
+            text-align: center;
         }
 
         div#corpo {
@@ -254,6 +271,15 @@
             text-decoration: underline;
         }
 
+        a.link2 {
+            color:#ff0000;
+            text-decoration: none;
+        }
+
+        a.link2:hover {
+            text-decoration: underline;
+        }
+
     }
 
 
@@ -293,11 +319,16 @@
                    <div id="texto2">
                        <h1>Projeto - Wellingtons Dias (compositor)</h1>
                        <p>Site criado para o compositor Wellington Dias, onde o cliente pode visitar os diversos projetos do compositor, podendo escutar o aúdio da música e ainda acompanhar as letras, tudo na mesma tela.</p>
-                       <p><a href="https://wellinsonnunes.github.io/projeto-curso-matematica/" target="_blank">Clique aqui</a> para visitar o site.</p>
+                       <p><a class="link2" href="https://wellinsonnunes.github.io/wellingtondias-compositor./" target="_blank">Clique aqui</a> para visitar o site.</p>
                    </div>
                </div>
             </div>
         
+        </section>
+
+        <section id="voltar">
+                <a href="index.html"><img src="imagens/botao-voltar.png" alt="voltar"></a>
+
         </section>
     </main>
 
